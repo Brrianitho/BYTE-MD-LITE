@@ -1,7 +1,5 @@
 const fs = require('fs-extra')
-if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
-
-
+if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' }
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER || '263715907468'  // Make SURE its Not Be Empty, Else Bot Stoped And Errors,
 global.mongodb = process.env.MONGODB_URI || "mongodb+srv://SithumKalhara:97531@cluster0.iva7dbo.mongodb.net/?retryWrites=true&w=majority"
